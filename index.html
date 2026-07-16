@@ -5,34 +5,95 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gabriel Picoli | Consultoria de Treinos Online</title>
 <meta name="description" content="Consultoria de treinos do Gabriel Picoli: metodologia científica, acompanhamento contínuo e suporte direto pelo WhatsApp para resultado real.">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <div class="bg-glow"></div>
-<div class="wrap">
 
-  <div class="header">
-    <div class="brand">
+<header class="navbar">
+  <div class="nav-inner">
+    <a href="#inicio" class="brand">
       <img class="logo-mark" src="assets/logo.png" alt="Gabriel Picoli">
       <div>
         <div class="brand-name">GABRIEL <span class="last">PICOLI</span></div>
-        <div class="brand-sub">CONSULTORIA DE TREINOS</div>
+        <div class="brand-sub">CONSULTORIA ONLINE</div>
+      </div>
+    </a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+
+    <label for="nav-toggle" class="nav-toggle-btn" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#planos">Planos</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-cta" data-plan="geral">Quero meu plano</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section class="hero-v2" id="inicio">
+    <div class="hero-text">
+      <div class="eyebrow"><span class="dash"></span> CONSULTORIA ONLINE</div>
+      <h1 class="hero-title">O MÉTODO CERTO<br>PARA O SEU<br><span class="accent">MELHOR SHAPE.</span></h1>
+      <p class="hero-desc">Treinos personalizados, ajustes constantes e acompanhamento direto para você alcançar resultados reais.</p>
+      <div class="hero-cta-row">
+        <a class="hero-btn hero-btn-primary" data-plan="geral">Quero começar agora →</a>
+      </div>
+      <div class="trust-line">🔒 Processo 100% online e seguro</div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="gp-mark"><span class="g">G</span><span class="p">P</span></div>
+      <span class="deco-line deco-line-1"></span>
+      <span class="deco-line deco-line-2"></span>
+    </div>
+  </section>
+
+  <div class="features-strip">
+    <div class="feature">
+      <div class="feature-icon">🏋️</div>
+      <div>
+        <div class="feature-title">TREINOS PERSONALIZADOS</div>
+        <div class="feature-desc">Feitos sob medida para o seu objetivo.</div>
       </div>
     </div>
-    <a class="social-badge" href="https://www.instagram.com/gabrielpicoli073/" target="_blank" rel="noopener">
-      <div style="margin-top:4px;">📷 @<span class="handle">gabrielpicoli.pt</span></div>
-    </a>
+    <div class="feature">
+      <div class="feature-icon">🎚️</div>
+      <div>
+        <div class="feature-title">AJUSTES CONSTANTES</div>
+        <div class="feature-desc">Evolução contínua garantida.</div>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">💬</div>
+      <div>
+        <div class="feature-title">SUPORTE DIRETO</div>
+        <div class="feature-desc">Tire suas dúvidas sempre que precisar.</div>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">📈</div>
+      <div>
+        <div class="feature-title">RESULTADOS COMPROVADOS</div>
+        <div class="feature-desc">Estratégia baseada em ciência e prática.</div>
+      </div>
+    </div>
   </div>
 
-  <div class="hero hero-centered">
-    <div class="hero-text">
-      <div class="eyebrow">CONSULTORIA DE TREINO ONLINE</div>
-      <div class="hero-title">RESULTADO<br>COM<br><span class="accent">MÉTODO</span></div>
-      <div class="hero-desc">Consultoria de treino com <b>metodologia científica</b>, acompanhamento próximo e ajustes constantes — para você evoluir com previsibilidade, não no achismo.</div>
-      <div class="hero-cta-row">
-        <a class="hero-btn hero-btn-primary" data-plan="geral">Quero minha consultoria →</a>
-        <a class="hero-btn hero-btn-ghost" href="#planos">Ver planos de consultoria</a>
-      </div>
+  <section class="about-section" id="sobre">
+    <div class="about-profile">
+      <div class="eyebrow"><span class="dash"></span> SOBRE</div>
+      <h2>Conheça o Gabriel Picoli</h2>
+      <img class="about-photo" src="assets/picolis.jpg" alt="Gabriel Picoli, especialista em treinamento">
+      <p class="about-bio">Especialista em treinamento de força e hipertrofia, ajudo pessoas a evoluírem com método, consistência e acompanhamento próximo — sem achismo e sem planilha genérica.</p>
       <div class="contact-row">
         <a class="contact-item" href="https://www.instagram.com/gabrielpicoli073/" target="_blank" rel="noopener">
           <div class="contact-icon ig-icon">📷</div>
@@ -50,101 +111,102 @@
         </a>
       </div>
     </div>
-  </div>
 
-  <div class="features-strip">
-    <div class="feature">
-      <div class="feature-icon">🎯</div>
-      <div>
-        <div class="feature-title">MÉTODO CIENTÍFICO</div>
-        <div class="feature-desc">Estratégia baseada em ciência do treinamento, sem achismo.</div>
-      </div>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">🛡️</div>
-      <div>
-        <div class="feature-title">ACOMPANHAMENTO PRÓXIMO</div>
-        <div class="feature-desc">Ajustes constantes conforme sua evolução real.</div>
-      </div>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">💬</div>
-      <div>
-        <div class="feature-title">SUPORTE DIRETO COMIGO</div>
-        <div class="feature-desc">Atendimento humanizado, sem intermediários.</div>
-      </div>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">📊</div>
-      <div>
-        <div class="feature-title">RESULTADO MENSURADO</div>
-        <div class="feature-desc">Reavaliações e relatórios de progresso reais.</div>
-      </div>
-    </div>
-  </div>
+    <div class="about-why">
+      <h3>Por que fazer consultoria comigo?</h3>
+      <p>Mais do que treinos, você recebe um método completo com estratégia, acompanhamento e direcionamento para transformar seu físico e sua performance.</p>
+      <a class="ghost-btn" href="#planos">Ver planos de consultoria →</a>
 
-  <div class="methodology" id="metodologia">
-    <div class="plans-heading">
-      <h2>Como funciona a consultoria</h2>
-      <p>Um processo estruturado, pensado para gerar resultado real — não apenas treino.</p>
-    </div>
-    <div class="method-grid">
-      <div class="method-step">
-        <div class="step-number">01</div>
-        <div class="step-title">Diagnóstico completo</div>
-        <div class="step-desc">Entendemos seu histórico, rotina e objetivo antes de montar qualquer treino.</div>
-      </div>
-      <div class="method-step">
-        <div class="step-number">02</div>
-        <div class="step-title">Plano estratégico individual</div>
-        <div class="step-desc">Programação 100% personalizada com base em ciência do treinamento.</div>
-      </div>
-      <div class="method-step">
-        <div class="step-number">03</div>
-        <div class="step-title">Acompanhamento ativo</div>
-        <div class="step-desc">Suporte direto e ajustes sempre que sua rotina ou evolução mudar.</div>
-      </div>
-      <div class="method-step">
-        <div class="step-number">04</div>
-        <div class="step-title">Evolução mensurada</div>
-        <div class="step-desc">Reavaliações periódicas para garantir que o resultado apareça.</div>
+      <div class="why-card">
+        <ul class="check-list">
+          <li><span class="check">✓</span> Planejamento individualizado</li>
+          <li><span class="check">✓</span> Acompanhamento próximo</li>
+          <li><span class="check">✓</span> Foco em evolução e resultados</li>
+          <li><span class="check">✓</span> Flexibilidade para sua rotina</li>
+          <li><span class="check">✓</span> 100% online, prático e eficiente</li>
+        </ul>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="plans-section" id="planos">
-    <div class="plans-heading">
-      <h2>Escolha sua consultoria</h2>
+  <section class="testimonials" id="depoimentos">
+    <div class="section-heading">
+      <div class="eyebrow center"><span class="dash"></span> DEPOIMENTOS</div>
+      <h2>Quem treina comigo, evolui de verdade</h2>
+      <p>Resultados reais de alunos que seguiram o método com consistência.</p>
+    </div>
+    <div class="test-grid">
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <div class="test-quote">"O acompanhamento próximo fez toda diferença. Sempre que eu tinha dúvida, o Gabriel respondia rápido e ajustava o treino conforme minha evolução."</div>
+        <div class="test-author">
+          <img class="test-avatar" src="assets/rafael.jpg" alt="Rafael M.">
+          <div>
+            <div class="test-name">Rafael M.</div>
+            <div class="test-result">-8kg em 4 meses</div>
+          </div>
+        </div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <div class="test-quote">"Nunca tinha sentido tanta evolução de força e disposição no dia a dia. O plano é realmente individualizado, não é treino genérico."</div>
+        <div class="test-author">
+          <div class="test-avatar test-avatar-initials">JC</div>
+          <div>
+            <div class="test-name">Juliana C.</div>
+            <div class="test-result">Ganho de força e disposição</div>
+          </div>
+        </div>
+      </div>
+      <div class="test-card">
+        <div class="test-stars">★★★★★</div>
+        <div class="test-quote">"Consultoria completa, com estratégia de verdade por trás. Em poucos meses já vi diferença no espelho e nas cargas do treino."</div>
+        <div class="test-author">
+          <div class="test-avatar test-avatar-initials">MP</div>
+          <div>
+            <div class="test-name">Marcos P.</div>
+            <div class="test-result">+6kg de massa magra</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="plans-section" id="planos">
+    <div class="section-heading">
+      <div class="eyebrow center"><span class="dash"></span> PLANOS</div>
+      <h2>Escolha o plano ideal para você</h2>
       <p>Todas as consultorias incluem treino 100% personalizado, metodologia validada e suporte direto comigo pelo WhatsApp.</p>
     </div>
     <div class="plans">
 
       <div class="plan">
-        <div class="plan-icon">🚀</div>
         <div class="plan-name">START</div>
         <div class="plan-duration">3 MESES</div>
-        <div class="plan-desc">Ideal para quem quer iniciar a consultoria com segurança e já sentir os primeiros resultados.</div>
+        <div class="plan-price">
+          <div class="price-main"><span class="rs">R$</span><span class="val">697</span></div>
+          <div class="price-note">À VISTA</div>
+          <div class="price-installment">ou 12x de <b>R$ 67,90</b> sem juros</div>
+        </div>
         <ul class="plan-list">
-          <li><span class="check">✓</span> Consultoria de treino 100% personalizada</li>
+          <li><span class="check">✓</span> Treinos personalizados</li>
           <li><span class="check">✓</span> Ajustes quinzenais</li>
           <li><span class="check">✓</span> Suporte via WhatsApp</li>
           <li><span class="check">✓</span> Avaliações de evolução</li>
         </ul>
-        <div class="plan-price-block">
-          <div class="price-label">À VISTA</div>
-          <div class="price-main"><span class="rs">R$</span><span class="val">697</span></div>
-          <div class="price-installment">ou 12x de <b>R$ 67,90</b> sem juros</div>
-        </div>
-        <a class="cta-btn" data-plan="start">Quero essa consultoria →</a>
+        <a class="cta-btn" data-plan="start">Escolher plano</a>
       </div>
 
       <div class="plan featured">
-        <div class="badge-top">★ MAIS ESCOLHIDO — 70% DOS ALUNOS</div>
-        <div class="plan-icon">📈</div>
+        <div class="badge-top">★ MAIS ESCOLHIDO</div>
         <div class="plan-name">EVOLUTION</div>
         <div class="plan-duration">6 MESES</div>
-        <div class="plan-desc">Tempo ideal para consolidar hábitos e ver a transformação de verdade acontecer com a consultoria completa.</div>
-        <div class="plan-diff">Diferencial: acompanhamento completo + estratégia nutricional inclusa</div>
+        <div class="plan-price">
+          <div class="price-main"><span class="rs">R$</span><span class="val">1.197</span></div>
+          <div class="price-note">À VISTA</div>
+          <div class="price-installment">ou 12x de <b>R$ 116,90</b> sem juros</div>
+        </div>
+        <div class="savings-tag">🏷 Economize R$ 197</div>
         <ul class="plan-list">
           <li><span class="check">✓</span> Tudo da consultoria START</li>
           <li><span class="check">✓</span> Ajustes semanais</li>
@@ -152,21 +214,18 @@
           <li><span class="check">✓</span> Estratégia nutricional básica</li>
           <li><span class="check">✓</span> Prioridade no atendimento</li>
         </ul>
-        <div class="plan-price-block">
-          <div class="price-label">À VISTA</div>
-          <div class="price-main"><span class="rs">R$</span><span class="val">1.197</span></div>
-          <div class="price-installment">ou 12x de <b>R$ 116,90</b> sem juros</div>
-        </div>
-        <div class="savings-tag">🏷 Economize R$ 197</div>
-        <a class="cta-btn" data-plan="evolution">Quero evoluir agora →</a>
+        <a class="cta-btn" data-plan="evolution">Escolher plano</a>
       </div>
 
       <div class="plan">
-        <div class="plan-icon">👑</div>
         <div class="plan-name">ELITE</div>
         <div class="plan-duration">12 MESES</div>
-        <div class="plan-desc">Para quem busca performance máxima e resultado duradouro, com consultoria premium do início ao fim.</div>
-        <div class="plan-diff">Diferencial: suporte prioritário + relatórios detalhados de evolução</div>
+        <div class="plan-price">
+          <div class="price-main"><span class="rs">R$</span><span class="val">1.997</span></div>
+          <div class="price-note">À VISTA</div>
+          <div class="price-installment">ou 12x de <b>R$ 194,90</b> sem juros</div>
+        </div>
+        <div class="savings-tag">🏷 Economize R$ 497</div>
         <ul class="plan-list">
           <li><span class="check">✓</span> Tudo da consultoria EVOLUTION</li>
           <li><span class="check">✓</span> Acompanhamento premium</li>
@@ -174,24 +233,69 @@
           <li><span class="check">✓</span> Suporte completo e prioritário</li>
           <li><span class="check">✓</span> Relatórios detalhados</li>
         </ul>
-        <div class="plan-price-block">
-          <div class="price-label">À VISTA</div>
-          <div class="price-main"><span class="rs">R$</span><span class="val">1.997</span></div>
-          <div class="price-installment">ou 12x de <b>R$ 194,90</b> sem juros</div>
-        </div>
-        <div class="savings-tag">🏷 Economize R$ 497</div>
-        <a class="cta-btn" data-plan="elite">Quero o máximo resultado →</a>
+        <a class="cta-btn" data-plan="elite">Escolher plano</a>
       </div>
 
     </div>
+
+    <div class="guarantee-bar">
+      <div class="guarantee-icon">🛡️</div>
+      <div>
+        <div class="guarantee-title">GARANTIA DE 7 DIAS</div>
+        <div class="guarantee-desc">Não gostou por qualquer motivo? Devolvemos 100% do seu dinheiro.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section" id="faq">
+    <div class="section-heading">
+      <div class="eyebrow center"><span class="dash"></span> FAQ</div>
+      <h2>Perguntas frequentes</h2>
+      <p>Ainda com dúvidas? Aqui estão as respostas mais comuns antes de começar.</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Como funciona a consultoria online?</summary>
+        <p>Após a contratação, você preenche uma anamnese completa e recebe seu plano de treino personalizado. O acompanhamento e os ajustes acontecem direto pelo WhatsApp, conforme a periodicidade do seu plano.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Preciso de academia ou equipamentos específicos?</summary>
+        <p>Não. O treino é montado de acordo com o que você tem disponível — academia completa, equipamento em casa ou peso do corpo.</p>
+      </details>
+      <details class="faq-item">
+        <summary>A consultoria inclui acompanhamento nutricional?</summary>
+        <p>Os planos EVOLUTION e ELITE incluem estratégia nutricional básica e completa, respectivamente. O plano START é focado apenas em treino.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Em quanto tempo vejo resultados?</summary>
+        <p>Isso varia de pessoa para pessoa, mas a maioria dos alunos já sente diferença de disposição e performance nas primeiras semanas, com resultados visuais consistentes a partir do segundo/terceiro mês.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Como falo com o Gabriel durante a consultoria?</summary>
+        <p>Todo o suporte é feito diretamente pelo WhatsApp, sem intermediários, com prioridade de atendimento para os planos EVOLUTION e ELITE.</p>
+      </details>
+    </div>
+  </section>
+
+  <div class="final-cta">
+    <div class="final-cta-left">
+      <div class="wa-icon">📱</div>
+      <div>
+        <div class="final-cta-title">Pronto para <span>começar</span>?</div>
+        <div class="final-cta-sub">Fale agora comigo pelo WhatsApp e tire suas dúvidas sem compromisso.</div>
+      </div>
+    </div>
+    <a class="final-cta-btn" data-plan="geral">Falar no WhatsApp</a>
   </div>
 
-  <div class="footer">
+  <footer class="footer">
     DISCIPLINA. FOCO. <span>CONSISTÊNCIA.</span> RESULTADOS.
-    <div class="ig"><a href="https://www.instagram.com/gabrielpicoli073/" target="_blank" rel="noopener">📷 @gabrielpicoli.pt</a></div>
-  </div>
+  </footer>
 
 </div>
+
+<a href="index2.html" class="compare-toggle">🔄 Ver versão anterior</a>
+
 <script src="js/script.js"></script>
 </body>
 </html>
